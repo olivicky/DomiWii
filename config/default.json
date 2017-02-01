@@ -1,6 +1,6 @@
 {
     "appSecret": "e4d92452159b32026e4af5151ca234ea",
-    "pageAccessToken": "EAAIZAaqMkrS0BAAtekHwXVGiZBxokDlzNJdmjr3ZAiZBYRMUCeR7mNSU6ImqVCNY5N1VDVHYySStNZBXXyT7WZAUCvolbT4rfOgWMabS4cl7W7cHtn8k8sm6ZBPf9GbPTrYDHeH3VqdZBP1zE2KmM1qz9mUdDvrcAL0xenBQHUahHAZDZD",
-    "validationToken": "my_validationToken",
-    "serverURL": "https://messengerplatformtestapp.herokuapp.com/"
+    "pageAccessToken": "EAAQZCVCQwZBiUBAJyaYG1r0dYwU679K23GdTcVfTiC19818JaLZB1L8RKtz1OooF8ekGlNabiP72EN0pyQIlZCP2d6DxFTy1mhM0ouw4OGdKbrPO3ah8O9g8uBXGJu28WfxYiixaaUqSZBat6rsA7L1AKjqRXEXhChN8wHtcJz53ttYFBcttk",
+    "validationToken": "domiwii_italia_token",
+    "serverURL": "https://domiwii.herokuapp.com/"
 }
