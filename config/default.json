@@ -2,5 +2,5 @@
     "appSecret": "ac21e59785ebb7626a32a61214898ba7",
     "pageAccessToken": "EAAQZCVCQwZBiUBACQbZBE5MrDA9UZAsm2rTnseO5Yx5WFekkRbMrFrVymNdwKZCVFIhxVN5Y91MBCE33pu7wTPGOlTMQNqRFm1KfXz1TVwlULaTZB5giy913DRj26uZAP588ozDNj0Rfjnj4QO3QN6uKZAo6qMMTYnc53tomYKfNB76fnyjNx0ht",
     "validationToken": "domiwii_italia_token",
-    "serverURL": "https://domiwii.herokuapp.com/"
+    "serverURL": "https://domiwii.herokuapp.com"
 }
