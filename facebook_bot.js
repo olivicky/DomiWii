@@ -324,7 +324,7 @@ askConfortIndex = function(response, convo) {
 
 askTemperature = function(response, convo, defaultValue) {
 	if(defaultValue != null){
-		temperatureQuestion = temperatureQuestion + "(default " +defaultValue + "°)";
+		temperatureQuestion = temperatureQuestion;
 	}
 		
     convo.ask(temperatureQuestion, function(response, convo) {
