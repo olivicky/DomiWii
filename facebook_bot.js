@@ -89,7 +89,7 @@ var commandLineArgs = require('command-line-args');
 var localtunnel = require('localtunnel');
 var request = require('request');;
 
-var url = 'http://dmautomation-domoticadomain.rhcloud.com';
+var url = 'https://domiwiiapp.herokuapp.com';
 var idQuestion = "Ciao quale DomiWii vuoi controllare?";
 var passwordQuestion = "Inserisci la password: "
 var modeQuestion = "Basta che digiti il comando o la sua iniziale...oppure scrivi Ciao per uscire!";
