@@ -385,7 +385,7 @@ askRecap = function(response, convo) {
     	recapQuestion = "Sei sicuro di voler spegnere il condizionatore controllato da DomiWii (" + alias + ") ?";
     }
     else if(mode == "VENTILATORE" || mode == "Ventilatore" || mode == "ventilatore" || mode == "V" || mode == "v"){
-    	recapQuestion = "Sei sicuro di voler attivare il condizionatore controllato da DomiWii (" + alias + ") in modalità Ventilatore, Temperatura: 21°C e velocità " + velocity + "?";
+    	recapQuestion = "Sei sicuro di voler attivare il condizionatore controllato da DomiWii (" + alias + ") in modalità Ventilatore con velocità " + velocity + "?";
     }
     
     else{
