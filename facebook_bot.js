@@ -93,7 +93,7 @@ var url = 'https://domiwiiapp.herokuapp.com';
 var idQuestion = "Ciao quale DomiWii vuoi controllare?";
 var passwordQuestion = "Inserisci la password: "
 var modeQuestion = "Basta che digiti il comando o la sua iniziale...oppure scrivi Ciao per uscire!";
-var fanQuestion = "Che velocità vuoi impostare?(default 1)";
+var fanQuestion = "Che velocità vuoi impostare?";
 var temperatureQuestion = "Che temperatura vuoi impostare?";
 var confortQuestion = "Che indice benessere preferisci?";
 
