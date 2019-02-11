@@ -28,5 +28,39 @@ module.exports = function(webserver, controller) {
             }
         }
     });
+    
+    debug('Configured POST /api/receive url for receiving events to notify to user');
+    webserver.post('/api/sendMessage', function(req, res) {
+
+        // NOTE: we should enforce the token check here
+
+        // respond to Server that the webhook has been received.
+        res.status(200);
+        res.send('ok');
+
+        var bot = controller.spawn({});
+        var body = req.body;
+      console.log(body);
+      
+        var channels = body.registration_ids;
+      console.log(channels);
+      
+        var messages = channels.map(function(item){
+          var obj = {};
+          obj.text = body.notification.body;
+          obj.channel = item;
+          return obj;
+        })
+        
+        console.log(messages);
+
+        messages.forEach(function(element){
+          // Now, send the message with requested body
+          bot.say(element);
+        })
+        
+        
+
+    });
 
 }
