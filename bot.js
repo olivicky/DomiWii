@@ -47,6 +47,9 @@ var controller = Botkit.facebookbot({
     studio_command_uri: process.env.studio_command_uri,
 });
 
+controller.useLocalStudio = true;
+
+
 //set up a local version of BotKit Studio, with script file in Script folder
 var cms = require('botkit-cms')();
 cms.useLocalStudio(controller);
@@ -91,15 +94,19 @@ if (process.env.studio_token) {
         if (message.text) {
             controller.studio.runTrigger(bot, message.text, message.user, message.channel, message).then(function(convo) {
                 if (!convo) {
+                    //bot.reply(message, "OK");
                     // no trigger was matched
                     // If you want your bot to respond to every message,
                     // define a 'fallback' script in Botkit Studio
                     // and uncomment the line below.
                     controller.studio.run(bot, 'fallback', message.user, message.channel, message);
+                    
+                    
                 } else {
                     // set variables here that are needed for EVERY script
                     // use controller.studio.before('script') to set variables specific to a script
                     convo.setVar('current_time', new Date());
+                    //convo.setVar('bot', controller.studio_token)
                 }
             }).catch(function(err) {
                 if (err) {
