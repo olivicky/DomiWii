@@ -36,6 +36,8 @@ if (!process.env.verify_token) {
 var Botkit = require('botkit');
 var debug = require('debug')('botkit:main');
 
+
+
 // Create the Botkit controller, which controls all instances of the bot.
 var controller = Botkit.facebookbot({
     // debug: true,
@@ -43,6 +45,14 @@ var controller = Botkit.facebookbot({
     access_token: process.env.page_token,
     studio_token: process.env.studio_token,
     studio_command_uri: process.env.studio_command_uri,
+});
+
+//set up a local version of BotKit Studio, with script file in Script folder
+var cms = require('botkit-cms')();
+cms.useLocalStudio(controller);
+
+cms.loadScriptsFromFile(__dirname + '/script/scripts.json').catch(function(err) {
+  console.error('Error loading scripts', err);
 });
 
 // Set up an Express-powered webserver to expose oauth and webhook endpoints
